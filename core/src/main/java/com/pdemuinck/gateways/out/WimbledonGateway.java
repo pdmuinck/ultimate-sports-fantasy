@@ -18,6 +18,10 @@ import org.json.JSONObject;
 
 public class WimbledonGateway {
 
+  public static List<Athlete> parseAthletes(){
+    return parseAthletes("https://www.wimbledon.com");
+  }
+
   public static List<Athlete> parseAthletes(String hostUrl) {
     HttpClient httpClient = newHttpClient();
     URI uri = URI.create(String.format("%s/en_GB/scores/feeds/2023/players/players.json", hostUrl));

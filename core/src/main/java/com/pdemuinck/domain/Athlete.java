@@ -78,4 +78,12 @@ public class Athlete {
   public int hashCode() {
     return Objects.hash(systemId);
   }
+
+  @Override
+  public String toString() {
+    return "Athlete{" +
+        "lastName='" + lastName + '\'' +
+        ", firstName='" + firstName + '\'' +
+        '}';
+  }
 }
