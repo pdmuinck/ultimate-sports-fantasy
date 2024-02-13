@@ -15,7 +15,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
-public class SelectAthletes extends Application {
+public class GameFX extends Application {
 
   @Override
   public void start(Stage stage) {
