@@ -15,11 +15,11 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
-public class GameFX extends Application {
+public class Game extends Application {
 
   @Override
   public void start(Stage stage) {
-    List<Athlete> athletes = WimbledonGateway.parseAthletes();
+    List<Athlete> athletes = WimbledonGateway.parseAthletes().stream().filter(a -> a.getEventId().equals("MS")).toList();
     List<Button> categoryButtons = Stream.of("A", "B", "C", "D").map(Button::new).toList();
 
     HBox hBox = new HBox();

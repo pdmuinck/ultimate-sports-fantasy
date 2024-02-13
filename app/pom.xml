@@ -116,7 +116,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.pdemuinck.app.SelectAthletes</mainClass>
+                            <mainClass>com.pdemuinck.app.Game</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
@@ -132,7 +132,7 @@
                 <artifactId>gluonfx-maven-plugin</artifactId>
                 <version>1.0.22</version>
                 <configuration>
-                    <mainClass>com.pdemuinck.app.SelectAthletes</mainClass>
+                    <mainClass>com.pdemuinck.app.Game</mainClass>
                 </configuration>
             </plugin>
         </plugins>
