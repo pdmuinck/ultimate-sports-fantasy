@@ -99,7 +99,7 @@ public class FilterListApp extends Application {
 
     primaryStage.setScene( scene );
     primaryStage.setOnShown((evt) -> {
-      playersProperty.get().addAll(WimbledonGateway.parseAthletes().subList(0, 6));
+      playersProperty.get().addAll(WimbledonGateway.parseAthletes());
     });
 
     primaryStage.show();
