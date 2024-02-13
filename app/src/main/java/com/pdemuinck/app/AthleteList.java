@@ -8,9 +8,7 @@ import javafx.scene.text.Text;
 
 public class AthleteList {
 
-  private List<Athlete> athletes;
   private ScrollPane scrollPane;
-
 
   public AthleteList(List<Athlete> athletes) {
     VBox vBox = new VBox();
